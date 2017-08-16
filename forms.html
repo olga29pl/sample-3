@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+   <h1>Анкета соціального опитування населення про куріння</h1>
+        <form method="POST" action="http://formspree.io/pl.olga29@gmail.com">
+            <label>Ви курите:
+                <label><input type="radio" name="answer1" value="так">Так</label>
+                <label><input type="radio" name="answer1" value="ні">Ні</label>
+            </label>
+            <br>
+            <br>
+            <label>Вік:
+            <select name="age1">
+            <option value="менше 18" selected>менше 18</option>
+            <option value="18-50">20-50</option>
+            <option value="більше 50">більше 50</option>
+            </select>
+            </label>
+            <br>
+            <br>
+            <label>Cтать:
+            <label><input type="radio" name="gender" value="чол">Чол</label>
+            <label><input type="radio" name="gender" value="жін">Жін</label>
+            <label><input type="radio" name="gender" value="інша">Інша</label>
+            </label>
+            <br>
+            <br>
+            <label>Курите з якого віку?
+            <input type="number" name="age2">
+            </label>
+            <br>
+            <br>
+            <label>Потреба в сигаретах на день:
+            <select name="quantity">
+            <option value="пів пачки" selected>пів пачки</option>
+            <option value="1 пачка">1 пачка</option>
+            <option value=">1 пачки">>1 пачки</option>
+            </select>
+            </label>
+            <br>
+            <br>
+            <label>Причини куріння:<br>
+            <label><input type="checkbox" name="reason1" value="стрес">Стрес</label><br>
+            <label><input type="checkbox" name="reason1" value="звичка">Звичка</label><br>
+            <label><input type="checkbox" name="reason1" value="задоволення">Задоволення</label><br>
+            <label><input type="checkbox" name="reason1" value="самоутвердження">Самоутвердження</label>
+            </label>
+            <br>
+            <br>
+            <label>Чи є у вас симптоми курця?<br>
+            <label><input type="checkbox" name="symptom" value="кашель">Ранковий кашель</label><br>
+            <label><input type="checkbox" name="symptom" value="сірість шкіри">Сірість шкіри</label><br>
+            <label><input type="checkbox" name="symptom" value="жовтизна пальців">Жовтизна пальців</label><br>
+            <label><input type="checkbox" name="symptom" value="жовтизна зубів">Жовтизна зубів</label>
+            </label>
+            <br>
+            <br>
+            <label>Якщо ви не палите то чому?<br>
+            <label><input type="checkbox" name="reason2" value="здоров'я">Бережете своє здоров'я</label><br>
+            <label><input type="checkbox" name="reason2" value="переконання">Із-за переконання</label><br>
+            <label><input type="checkbox" name="reason2" value="економія коштів">Із-за економії коштів</label><br>
+            <label><input type="checkbox" name="reason2" value="імідж">Мішає вашому іміджу</label>
+            <br>
+            <label><input type="checkbox" name="reason2" value="стиль життя">Мішає вашому стилю життя</label>
+            </label>
+            <br>
+            <br>
+            <label>Чи збираєтесь ви кинути палити і з яких причин?
+            <br>
+            <label><input type="radio" name="answer2" value="так">Так</label>
+            <label><input type="radio" name="answer2" value="ні">Ні</label>
+            <br>
+            <textarea name="reason3" rows="10" cols="50" placeholder="Ваші причини"></textarea>
+            </label>
+            <br>
+            <br>
+            <input type="submit" name="відправити">
+            <input type="reset" name="скинути">  
+         </form>  
+</body>
+</html>
